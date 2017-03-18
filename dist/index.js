@@ -32,7 +32,7 @@ var DDlogin = function (_React$Component) {
                 style = _this$props$options.style,
                 href = _this$props$options.href;
 
-            var src = _this.state.url + goto;
+            var src = _this.state.url + encodeURIComponent(goto);
             src += style ? "&style=" + style : "";
             src += href ? "&href=" + href : "";
             return src;
@@ -51,7 +51,7 @@ var DDlogin = function (_React$Component) {
                 id: this.props.options.id,
                 src: this.createSrc(),
                 frameBorder: "0",
-                allowTransparency: true,
+                allowTransparency: "true",
                 scrolling: "no",
                 width: "365px",
                 height: "400px"

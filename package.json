@@ -1,14 +1,26 @@
 {
-  "name": "ddlogin",
+  "name": "ddlogin-react",
   "version": "0.1.0",
   "description": "ddlogin for dingtalk login",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "gulp",
     "test": "jest"
   },
-  "author": "",
+  "author": "pasturn",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pasturn/ddlogin-react.git"
+  },
+  "keywords": [
+    "ddlogin",
+    "dd",
+    "dingtalk"
+  ],
+  "bugs": {
+    "url": "https://github.com/pasturn/ddlogin-react/issues"
+  },
   "dependencies": {
     "react": "^15.4.2"
   },
