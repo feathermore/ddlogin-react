@@ -22,7 +22,7 @@ export defalut class Login extends React.Component{
         return (
             <div id="login">
                 <h2>扫描登录</h2>
-                <DDlogin options="options"/>
+                <DDlogin options={options}/>
             </div>
         )
     }
