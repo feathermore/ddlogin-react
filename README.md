@@ -3,7 +3,7 @@ ddlogin for react
 
 ## Installtion
 ```
-$ npm install react-ddlogin --save
+$ npm install ddlogin-react --save
 ```
 ## Example Usage
 ```
