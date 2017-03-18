@@ -9,7 +9,7 @@ class DDlogin extends React.Component{
     }
     createSrc = () => {
         const { goto, style, href} = this.props.options
-        let src = this.state.url + goto
+        let src = this.state.url + encodeURIComponent(goto)
         src += style ? "&style=" + style : "";
         src += href ? "&href=" + href : "";
         return src
@@ -19,13 +19,13 @@ class DDlogin extends React.Component{
             id: this.props.options.id,
             src: this.createSrc(),
             frameBorder: "0",
-            allowTransparency : true,
+            allowTransparency : "true",
             scrolling: "no",
             width: "365px",
             height: "400px"
         }
         return (
-            <iframe {...iframeOption}></iframe>
+            <iframe {...iframeOption} />
         )
     }
 }
