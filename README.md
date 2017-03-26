@@ -1,7 +1,7 @@
 # ddlogin-react
 ddlogin for react
 
-## Installtion
+## Installation
 ```
 $ npm install ddlogin-react --save
 ```
