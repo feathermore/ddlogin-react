@@ -1,6 +1,6 @@
 {
   "name": "ddlogin-react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ddlogin for dingtalk login",
   "main": "dist/index.js",
   "scripts": {
