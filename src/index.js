@@ -21,8 +21,8 @@ class DDlogin extends React.Component{
             frameBorder: "0",
             allowTransparency : "true",
             scrolling: "no",
-            width: "365px",
-            height: "400px"
+            width: this.props.options.width,
+            height: this.props.options.height
         }
         return (
             <iframe {...iframeOption} />
@@ -46,8 +46,8 @@ DDlogin.defaultProps={
     goto: "",
     style: "",
     href: "",
-    width: "300px",
-    height: "300px"
+    width: "350px",
+    height: "350px"
 }
 
 export default DDlogin
