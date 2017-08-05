@@ -10,7 +10,7 @@ $ npm install ddlogin-react --save
 import React from 'react'
 import DDlogin from 'ddlogin-react'
 
-export defalut class Login extends React.Component{
+export default class Login extends React.Component{
     constructor(props){
         super(props)
         this.state = {
