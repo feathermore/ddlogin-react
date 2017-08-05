@@ -54,7 +54,7 @@ export default class Login extends React.Component{
     render(){
          const options = {
             id: "login-container",
-            goto: "https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=APPID&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=REDIRECT_URI",
+            goto: `https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=${this.state.APPID}&response_type=code&scope=snsapi_login&state=dinglogin&redirect_uri=${this.state.REDIRECT_URI}`,
             width: '350px',
             height: '350px'
         }
