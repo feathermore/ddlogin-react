@@ -8,7 +8,7 @@ class DDlogin extends React.Component{
         }
     }
     createSrc = () => {
-        const { goto, style, href} = this.props.options
+        const { goto, style, href } = this.props.options
         let src = this.state.url + encodeURIComponent(goto)
         src += style ? "&style=" + style : "";
         src += href ? "&href=" + href : "";
@@ -22,7 +22,8 @@ class DDlogin extends React.Component{
             allowTransparency : "true",
             scrolling: "no",
             width: this.props.options.width,
-            height: this.props.options.height
+            height: this.props.options.height,
+            className: this.props.className
         }
         return (
             <iframe {...iframeOption} />
@@ -37,17 +38,22 @@ DDlogin.propTypes = {
         style: React.PropTypes.string,
         href: React.PropTypes.string,
         width: React.PropTypes.string,
-        height: React.PropTypes.string
-    })
+        height: React.PropTypes.string, 
+    }),
+    className: React.PropTypes.string
 }
 
 DDlogin.defaultProps={
-    id: "login_container",
-    goto: "",
-    style: "",
-    href: "",
-    width: "350px",
-    height: "350px"
+    options: {
+        id: "login_container",
+        goto: "",
+        style: "",
+        href: "",
+        width: "350px",
+        height: "350px",
+        
+    },
+    className: ''
 }
 
 export default DDlogin

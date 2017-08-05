@@ -54,7 +54,8 @@ var DDlogin = function (_React$Component) {
                 allowTransparency: "true",
                 scrolling: "no",
                 width: this.props.options.width,
-                height: this.props.options.height
+                height: this.props.options.height,
+                className: this.props.className
             };
             return _react2.default.createElement("iframe", iframeOption);
         }
@@ -71,16 +72,21 @@ DDlogin.propTypes = {
         href: _react2.default.PropTypes.string,
         width: _react2.default.PropTypes.string,
         height: _react2.default.PropTypes.string
-    })
+    }),
+    className: _react2.default.PropTypes.string
 };
 
 DDlogin.defaultProps = {
-    id: "login_container",
-    goto: "",
-    style: "",
-    href: "",
-    width: "350px",
-    height: "350px"
+    options: {
+        id: "login_container",
+        goto: "",
+        style: "",
+        href: "",
+        width: "350px",
+        height: "350px"
+
+    },
+    className: ''
 };
 
 exports.default = DDlogin;
