@@ -2,11 +2,11 @@
 ddlogin for react
 
 ## Installation
-```
+```sh
 $ npm install ddlogin-react --save
 ```
 ## Example Usage
-```
+```js
 import React from 'react'
 import DDlogin from 'ddlogin-react'
 
